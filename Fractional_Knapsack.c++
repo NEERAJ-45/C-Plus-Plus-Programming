@@ -1,20 +1,17 @@
 #include <stdio.h>
-typedef struct Objects
-{
+
+typedef struct Object {
     float weight;
     float profit;
-    float ratio
-} Objects;
-void bubbleSorted(Objects a[], int n) // function to implement bubble sort
-{
+    float ratio;
+} Object;
+
+void bubbleSorted(Object a[], int n) {
     int i, j;
-    Objects temp;
-    for (i = 0; i < n; i++)
-    {
-        for (j = i + 1; j < n; j++)
-        {
-            if (a[j].weight < a[i].weight)
-            {
+    Object temp;
+    for (i = 0; i < n; i++) {
+        for (j = i + 1; j < n; j++) {
+            if (a[j].weight < a[i].weight) {
                 temp = a[i];
                 a[i] = a[j];
                 a[j] = temp;
@@ -23,10 +20,8 @@ void bubbleSorted(Objects a[], int n) // function to implement bubble sort
     }
 }
 
-void main()
-{
-
-    Objects x1, x2, x3;
+int main() {
+    Object x1, x2, x3;
 
     x1.profit = 25;
     x2.profit = 24;
@@ -36,6 +31,10 @@ void main()
     x2.weight = 15.0;
     x3.weight = 10.0;
 
-    // write functions for finding ratio;
+    // Calculate ratios
     x1.ratio = x1.profit / x1.weight;
+    x2.ratio = x2.profit / x2.weight;
+    x3.ratio = x3.profit / x3.weight;
+
+    return 0;
 }
