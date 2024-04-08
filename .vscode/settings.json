@@ -1,0 +1,33 @@
+{
+  "C_Cpp.default.compilerPath": "C:\\MinGW\\bin\\g++.exe",
+  "files.associations": {
+    "*.C": "c",
+    "*.net": "vb",
+    "*.h": "cpp",
+    "*.cpp": "c++",
+    "*.c": "c",
+    "iostream": "cpp",
+    "random": "cpp",
+    "ostream": "cpp",
+    "iosfwd": "cpp",
+    "*.tcc": "cpp",
+    "string": "cpp",
+    "unordered_map": "c",
+    "vector": "c",
+    "exception": "c",
+    "functional": "c",
+    "iterator": "c",
+    "memory": "c",
+    "memory_resource": "c",
+    "string_view": "c",
+    "type_traits": "c",
+    "initializer_list": "c",
+    "istream": "c",
+    "new": "c",
+    "stdexcept": "c",
+    "array": "c",
+    "tuple": "c",
+    "utility": "c",
+    "typeinfo": "c"
+  }
+}
