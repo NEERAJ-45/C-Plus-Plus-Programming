@@ -20,6 +20,13 @@ void bubbleSorted(Object a[], int n) {
     }
 }
 
+float calculateRatio(Object x1)
+{
+      x1.ratio = x1.profit / x1.weight;
+     
+    
+}
+
 int main() {
     Object x1, x2, x3;
 
@@ -31,10 +38,8 @@ int main() {
     x2.weight = 15.0;
     x3.weight = 10.0;
 
-    // Calculate ratios
-    x1.ratio = x1.profit / x1.weight;
-    x2.ratio = x2.profit / x2.weight;
-    x3.ratio = x3.profit / x3.weight;
+ 
+  
 
     return 0;
 }
