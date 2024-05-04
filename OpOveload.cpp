@@ -9,7 +9,7 @@ private:
 public:
     Complex()
     {
-        img = real = 0;
+        img = real = 0; 
     }
     Complex(int real, int img)
     {

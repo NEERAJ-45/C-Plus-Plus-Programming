@@ -37,13 +37,16 @@ int main()
 {
     Student Neeraj, Sujal, Pavya;
     Neeraj.setData();
-    Student::getCount();
+    Student::getCount();//called without creating an object. 
     Neeraj.getData();
+
     Sujal.setData();
     Student::getCount();
     Sujal.getData();
+    
     Pavya.setData();
     Student::getCount();
     Pavya.getData();
+    
     return 0;
 }
