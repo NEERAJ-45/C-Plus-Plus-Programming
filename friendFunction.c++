@@ -15,7 +15,7 @@ public:
     friend Number Summ(Number n1, Number n2);
     void printNumber()
     {
-        cout << "Your Numbers: " << a << " " << b<<endl;
+        cout << "Your Numbers: " << a << " " << b << endl;
     }
 };
 
@@ -24,10 +24,10 @@ Number Summ(Number n1, Number n2)
     Number n3;
     n3.a = (n1.a + n2.a);
     n3.b = (n1.b + n2.b);
-
+    
     return n3;
 }
-
+ 
 int main()
 {
     Number n1, n2, n3;
@@ -40,7 +40,7 @@ int main()
     n3 = Summ(n1, n2);
     n3.printNumber();
 
-    return 0;
+     
 }
 /*
 @ Properties of friend functions

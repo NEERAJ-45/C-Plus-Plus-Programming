@@ -1,10 +1,19 @@
 #include <iostream>
 using namespace std;
 
-class Number
+class Simple;
+
+class Extra
+{
+public:
+    int sum(Simple s1, Simple s2);
+};
+
+class Simple
 {
 private:
     int a, b;
+    friend int Extra::sum(Simple s1, Simple s2);
 
 public:
     void setData(int a, int b)
@@ -12,39 +21,23 @@ public:
         this->a = a;
         this->b = b;
     }
-
-    // Declare Summ as a friend function inside the class
-    friend Number Summ(Number n1, Number n2);
-
-    void printNumber()
-    {
-        cout << "Your Numbers: " << a << " " << b << endl;
-    }
 };
 
-// Define Summ function outside the class
-Number Summ(Number n1, Number n2)
+int Extra::sum(Simple s1, Simple s2)
 {
-    Number n3;
-    n3.a = (n1.a + n2.a);
-    n3.b = (n1.b + n2.b);
-
-    return n3;
+    int sumi = (s1.a + s2.a) + (s2.b + s1.b);
+    return sumi;
 }
 
 int main()
 {
-    Number n1;
-    n1.setData(34, 98);
-    n1.printNumber();
+    Simple s1, s2;
+    s1.setData(2, 3);
+    s2.setData(4, 5);
 
-    Number n2;
-    n2.setData(10, 20);
-    n2.printNumber();
-
-    // Adding two numbers
-    Number n3 = Summ(n1, n2);
-    n3.printNumber();
+    Extra extra;
+    int totalSum = extra.sum(s1, s2);
+    cout << "Sum: " << totalSum << endl;
 
     return 0;
 }
