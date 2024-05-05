@@ -42,12 +42,14 @@ int main()
 
     return 0;
 }
-/* Properties of friend functions
-1. Not in the scope of class
-2. since it is not in the scope of the class, it cannot be called from the object of that class. n1.Summ() == Invalid
-3. Can be invoked without the help of any object
-4. Usually contans the objects as arguments
-5. Can be declared inside public or private section of the class
-6. It cannot access the members directly by their names and need object_name.member_name to access any member.
+/*
+@ Properties of friend functions
+
+- 1. Not in the scope of class
+- 2. since it is not in the scope of the class, it cannot be called from the object of that class. n1.Summ() == Invalid
+- 3. Can be invoked without the help of any object
+- 4. Usually contans the objects as arguments
+- 5. Can be declared inside public or private section of the class
+- 6. It cannot access the members directly by their names and need object_name.member_name to access any member.
 
 */
