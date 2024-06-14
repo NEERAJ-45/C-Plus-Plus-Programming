@@ -37,7 +37,7 @@ public:
 
 // # Multiple
 /*
-class Base1
+class Base1 
 {
 
 public:
